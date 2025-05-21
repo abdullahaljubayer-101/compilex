@@ -1,4 +1,10 @@
 import React, { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
+import CodePreview from "@/components/CodePreview";
+import CallToAction from "@/components/CallToAction";
+import Footer from "@/components/Footer";
 
 const Index: React.FC = () => {
   useEffect(() => {
@@ -26,7 +32,12 @@ const Index: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-compliex-dark text-white">
-      <h1>Hello World</h1>
+      <Navbar />
+      <Hero />
+      <Features />
+      <CodePreview />
+      <CallToAction />
+      <Footer />
     </div>
   );
 };
