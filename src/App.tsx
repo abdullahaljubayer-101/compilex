@@ -9,6 +9,7 @@ import Jobs from "./pages/Jobs";
 import Practice from "./pages/Practice";
 import ProblemDetail from "./pages/ProblemDetail";
 import Learn from "./pages/Learn";
+import Leaderboard from "./pages/Leaderboard";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/practice" element={<Practice />} />
           <Route path="/practice/problem/:id" element={<ProblemDetail />} />
           <Route path="/learn" element={<Learn />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
