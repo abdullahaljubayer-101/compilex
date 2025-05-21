@@ -1,0 +1,110 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 227 15% 12%;
+    --foreground: 0 0% 90%;
+
+    --card: 227 15% 15%;
+    --card-foreground: 0 0% 90%;
+
+    --popover: 227 15% 12%;
+    --popover-foreground: 0 0% 90%;
+
+    --primary: 350 79% 54%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 227 15% 18%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 227 10% 30%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 350 79% 54%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 227 15% 20%;
+    --input: 227 15% 20%;
+    --ring: 350 79% 54%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 227 15% 12%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 350 79% 54%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 227 15% 18%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 227 15% 20%;
+    --sidebar-ring: 350 79% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-compliex-dark text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold tracking-tight;
+  }
+
+  code, pre {
+    @apply font-mono;
+  }
+}
+
+@layer components {
+  .code-snippet {
+    @apply bg-compliex-dark-lighter rounded-md p-4 font-mono text-sm relative overflow-hidden;
+  }
+  
+  .code-line {
+    @apply block;
+  }
+  
+  .terminal {
+    @apply bg-compliex-dark-lighter rounded-md p-4 font-mono text-sm border border-compliex-gray-light;
+  }
+
+  .feature-card {
+    @apply bg-compliex-dark-lighter rounded-lg p-6 transition-all duration-300 hover:shadow-md hover:shadow-compliex-red/10 border border-compliex-gray-dark hover:border-compliex-red/50;
+  }
+
+  .feature-icon {
+    @apply bg-compliex-gray-dark p-3 rounded-md text-compliex-red mb-4 inline-flex items-center justify-center;
+  }
+
+  .cta-button {
+    @apply bg-compliex-red hover:bg-compliex-red-dark text-white font-medium rounded-md px-5 py-2.5 transition-all duration-200;
+  }
+
+  .secondary-button {
+    @apply bg-compliex-gray-dark hover:bg-compliex-gray-light text-white font-medium rounded-md px-5 py-2.5 transition-all duration-200;
+  }
+  
+  .typing-container {
+    @apply inline-block;
+  }
+  
+  .typing-text {
+    @apply font-mono overflow-hidden whitespace-nowrap border-r-2 border-compliex-red pr-1 animate-typing;
+    animation-delay: 0s;
+  }
+}
