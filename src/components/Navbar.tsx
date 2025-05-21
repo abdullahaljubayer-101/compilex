@@ -1,8 +1,7 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { Code, User } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Code, User } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Navbar: React.FC = () => {
   return (
@@ -14,17 +13,39 @@ const Navbar: React.FC = () => {
             Complie<span className="text-compliex-red">X</span>
           </Link>
         </div>
-        
+
         <div className="hidden md:flex items-center gap-8">
-          <Link to="/#features" className="text-sm text-gray-300 hover:text-white transition-colors">Features</Link>
-          <Link to="/leaderboard" className="text-sm text-gray-300 hover:text-white transition-colors">Leaderboard</Link>
-          <Link to="/jobs" className="text-sm text-gray-300 hover:text-white transition-colors">Jobs</Link>
-          <Link to="/practice" className="text-sm text-gray-300 hover:text-white transition-colors">Practice</Link>
-          <Link to="/learn" className="text-sm text-gray-300 hover:text-white transition-colors">Learn</Link>
+          <Link
+            to="/practice"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
+            Practice
+          </Link>
+          <Link
+            to="/leaderboard"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
+            Leaderboard
+          </Link>
+          <Link
+            to="/learn"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
+            Learn
+          </Link>
+          <Link
+            to="/jobs"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
+            Jobs
+          </Link>
         </div>
-        
+
         <div className="flex items-center gap-3">
-          <Button variant="ghost" className="text-gray-300 hover:text-white hidden md:flex">
+          <Button
+            variant="ghost"
+            className="text-gray-300 hover:text-white hidden md:flex"
+          >
             Sign In
           </Button>
           <Button className="bg-compliex-red hover:bg-compliex-red-dark text-white">
